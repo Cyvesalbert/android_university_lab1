@@ -21,6 +21,7 @@ import com.codepath.bestsellerlistapp.networking.NYTimesApiClient;
 
 import java.util.List;
 
+
 /**
  * A fragment representing a list of Items.
  */

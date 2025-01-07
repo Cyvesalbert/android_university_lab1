@@ -11,6 +11,8 @@ import com.codepath.bestsellerlistapp.models.BestSellerBook;
 
 import java.util.List;
 
+
+
 /**
  * {@link RecyclerView.Adapter} that can display a {@link BestSellerBook} and makes a call to the
  * specified {@link OnListFragmentInteractionListener}.
