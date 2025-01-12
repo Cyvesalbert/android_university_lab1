@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">NY Times Best Seller</string>
+    <item name="ranking" type="id">@+id/ranking</item>
+    <item name="book_description" type="id">@+id/book_description</item>
+    <item name="buy_button" type="id">@+id/buy_button</item>
 </resources>

@@ -8,4 +8,5 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <item name="book_image" type="id">@+id/book_image</item>
 </resources>

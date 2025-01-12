@@ -13,7 +13,6 @@
 /captures
 .externalNativeBuild
 .cxx
-NYTimesApiClient.java
 
 
 ####### Below is Android specific gitignore ##########
