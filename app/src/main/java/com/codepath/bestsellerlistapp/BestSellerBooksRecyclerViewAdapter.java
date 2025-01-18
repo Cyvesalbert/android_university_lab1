@@ -28,6 +28,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
     private final List<BestSellerBook> books;
     private final OnListFragmentInteractionListener mListener;
 
+
     public BestSellerBooksRecyclerViewAdapter(List<BestSellerBook> items, OnListFragmentInteractionListener listener) {
         books = items;
         mListener = listener;
@@ -73,7 +74,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
         public final TextView mBookTitle;
         public final TextView mBookAuthor;
         public BestSellerBook mItem;
-//        public final TextView mBookRank;
+        public final TextView mBookRank;
         public final ImageView mBookImage;
         public final TextView mBookDescription;
         public final Button mBookUrl;
@@ -85,7 +86,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
             mView = view;
             mBookTitle = (TextView) view.findViewById(R.id.book_title);
             mBookAuthor = (TextView) view.findViewById(R.id.book_author);
-//            mBookRank = (TextView) view.findViewById(R.id.ranking);
+            mBookRank = (TextView) view.findViewById(R.id.ranking);
             mBookImage = (ImageView) view.findViewById(R.id.book_image);
             mBookDescription = (TextView) view.findViewById(R.id.book_description);
             mBookUrl = (Button) view.findViewById(R.id.buy_button);
@@ -104,11 +105,11 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
             //holder.mBookTitle.setText(books.get(position).title);
             mBookAuthor.setText(bestSellerBook.getAuthor());
             //holder.mBookAuthor.setText(books.get(position).author);
-//            mBookRank.setText(bestSellerBook.getRank());
+            mBookRank.setText(String.valueOf(bestSellerBook.getRank()));
             //holder.mBookRank.setText(books.get(position).rank);
             mBookDescription.setText(bestSellerBook.getDescription());
             //holder.mBookDescription.setText(books.get(position).description);
-            mBookUrl.setText(bestSellerBook.getAmazonUrl());
+            //mBookUrl.setText(bestSellerBook.getAmazonUrl());
             //holder.mBookUrl.setText(books.get(position).amazonUrl);
         }
     }

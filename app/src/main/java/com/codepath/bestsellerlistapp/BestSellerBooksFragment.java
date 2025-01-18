@@ -1,6 +1,8 @@
 package com.codepath.bestsellerlistapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.core.widget.ContentLoadingProgressBar;
@@ -13,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.codepath.bestsellerlistapp.models.BestSellerBook;
@@ -89,6 +92,7 @@ public class BestSellerBooksFragment extends Fragment implements OnListFragmentI
 
     @Override
     public void onItemClick(BestSellerBook item) {
+
         Toast.makeText(getContext(), "test", Toast.LENGTH_LONG).show();
     }
 }
